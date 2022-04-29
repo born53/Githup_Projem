@@ -1,16 +1,20 @@
-package okulYonetimi;
+package OkulYonetimi2;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Ogretmen extends Kisi{
+public class Ogretmen extends Kisi {
 
-    static Map<String,Ogretmen> ogretmenListesiMap = new HashMap<>();
-
+    static Map<String, Ogretmen> ogretmenListesiMap = new HashMap<>();
     private String bolum ="";
     private String sicil ="";
 
     public Ogretmen() {
+    }
+
+    public Ogretmen(String bolum, String sicil) {
+        this.bolum = bolum;
+        this.sicil = sicil;
     }
 
     public Ogretmen(String adSoyad, String yas, String bolum, String sicil) {
